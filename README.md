@@ -27,3 +27,19 @@ This will run the demo program as a test.
 git clone swift-tcl-demo
 make test
 ```
+
+#### All-in-one download and builds
+Download all the of repositories
+```
+git clone https://github.com/flightaware/swift-tcl8.6.git
+git clone https://github.com/flightaware/swift-tcl.git
+git clone https://github.com/flightaware/swift-tcl-demo.git
+git clone https://github.com/flightaware/swift-tcl-extension-demo.git
+```
+Build/Install or Build/Test
+```
+make -C swift-tcl8.6 install
+make -C swift-tcl install
+make -C swift-tcl-demo test
+make -C swift-tcl-extension-demo test
+```
